@@ -1,4 +1,4 @@
-name: flutter_template
+name: flutter_blocs
 description: A new Flutter project.
 
 publish_to: 'none'
@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.0.1
 
 dev_dependencies:
   flutter_test:

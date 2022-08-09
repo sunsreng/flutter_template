@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'g_animated_align.view.dart';
+import 'g_counter.dart';
 import 'home.dart';
 
 class HomeView extends StatelessWidget {
@@ -8,7 +8,7 @@ class HomeView extends StatelessWidget {
   static const id = '/HomeView';
 
   final List<HomeModel> list = [
-    HomeModel(GAnimatedAlignView.id, 'GAnimatedAlignView'),
+    HomeModel(GCounterView.id, 'GCounterView'),
   ];
 
   @override
@@ -21,7 +21,7 @@ class HomeView extends StatelessWidget {
         itemCount: list.length,
         itemBuilder: (context, i) => ListTile(
           title: Text(list[i].label),
-          onTap: () => Navigator.pushNamed(context, GAnimatedAlignView.id),
+          onTap: () => Navigator.pushNamed(context, list[i].id),
         ),
         separatorBuilder: (context, i) => const Divider(height: 1),
       ),
